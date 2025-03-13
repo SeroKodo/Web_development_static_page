@@ -101,3 +101,125 @@ footer {
     width: 100%;
     font-size: 1.3em;
 }
+
+/* Адаптивность для планшетов */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .meme-image:hover {
+        transform: scale(1.5);
+    }
+
+    section {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    ul, ol {
+        font-size: 1.2em;
+    }
+
+    .example {
+        font-size: 1.5em;
+    }
+}
+
+/* Адаптивность для мобильных */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    ul, ol {
+        font-size: 1.1em;
+        margin-left: 15px;
+    }
+
+    .example {
+        font-size: 1.3em;
+    }
+
+    .meme-image {
+        border-width: 3px;
+    }
+
+    .meme-image:hover {
+        transform: scale(1.3);
+    }
+
+    footer {
+        font-size: 1.1em;
+        padding: 8px;
+    }
+}
+
+/* Адаптивность для маленьких мобильных */
+@media screen and (max-width: 320px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .example {
+        font-size: 1.2em;
+    }
+
+    ul, ol {
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    .meme-image:hover {
+        transform: scale(1.2);
+    }
+}
