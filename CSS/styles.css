@@ -1,3 +1,8 @@
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: 'Comic Neue', cursive;
     background-color: #ffeb3b;
@@ -5,6 +10,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 header {
@@ -50,6 +57,8 @@ nav ul li a:hover {
 }
 
 main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -95,7 +104,7 @@ footer {
     background-color: #ff5722; 
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -145,6 +154,10 @@ footer {
 /* Адаптивность для мобильных */
 @media screen and (max-width: 480px) {
     body {
+        padding: 0;
+    }
+
+    main {
         padding: 10px;
     }
 
@@ -158,10 +171,6 @@ footer {
 
     nav ul li a {
         font-size: 1.2em;
-    }
-
-    main {
-        padding: 10px;
     }
 
     section {
